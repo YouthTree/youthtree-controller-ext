@@ -16,6 +16,23 @@ Gem::Specification.new do |s|
     "LICENSE",
      "README.md"
   ]
+  s.files = [
+    ".document",
+     ".gitignore",
+     "LICENSE",
+     "README.md",
+     "Rakefile",
+     "lib/youth_tree/controller_ext.rb",
+     "lib/youth_tree/controller_ext/almost_happy_ext.rb",
+     "lib/youth_tree/controller_ext/authlogic_helpers_ext.rb",
+     "lib/youth_tree/controller_ext/authorization_helpers_ext.rb",
+     "lib/youth_tree/controller_ext/pseudocephalopod_resource_ext.rb",
+     "lib/youth_tree/controller_ext/ssl_requirement_ext.rb",
+     "lib/youth_tree/controller_ext/title_estuary_ext.rb",
+     "lib/youth_tree/controller_ext/translation_ext.rb",
+     "lib/youthtree-controller-ext.rb",
+     "youthtree-controller-ext.gemspec"
+  ]
   s.homepage = %q{http://github.com/YouthTree/youthtree-controller-ext}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
