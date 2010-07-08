@@ -7,7 +7,15 @@
 
 ## Usage ##
 
-## Configuration ##
+Use `use_controller_ext` / `use_controller_exts` on a class with one of the named controller extensions.
+By default, it provides:
+
+* `:almost_happy` - InheritedResources collection tweak
+* `:authlogic_helpers` - Base authlogic helpers
+* `:pseudocephalopod_resource` - use slugged find in InheritedResource
+* `:ssl_requirement` - Tie in with `youthtree-settings` to make it easier to do ssl in certain environments.
+* `:title_estuary` - adds controller methods for `title_estuary`.
+* `:translation` - adds support for `tu` and `tf` for flash and ui methods.
 
 ## Note on Patches/Pull Requests ##
  
