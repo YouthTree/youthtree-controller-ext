@@ -3,7 +3,7 @@ require 'active_support/concern'
 module YouthTree
   module ControllerExt
 
-    VERSION = "0.1.0".freeze
+    VERSION = "0.1.1".freeze
 
     mattr_accessor :known_extensions
     self.known_extensions ||= {}
@@ -22,7 +22,7 @@ module YouthTree
         return known_extensions[name]
       else
         constant_name = "#{name.to_s.classify}Ext"
-        [nil, "YouthTree::ControllerExt", "YouthTree"].each do |namespace|
+        [nil, "YouthTree::ControllerExt", "YouthTree", "ControllerExt"].each do |namespace|
           full = [namespace, constant_name].compact.join("::")
           begin
             constant = full.constantize

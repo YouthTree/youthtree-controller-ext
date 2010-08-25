@@ -10,8 +10,8 @@ YouthTree::ControllerExt.for(:translation) do
 
     protected
 
-    def tf(key)
-      I18n.t(key.to_sym, :scope => :flash)
+    def tf(key, opts = {})
+      I18n.t(key.to_sym, opts.merge(:scope => :flash))
     end
 
     def tu(name, options = {})
