@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{youthtree-controller-ext}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Darcy Laycock"]
-  s.date = %q{2010-07-08}
+  s.date = %q{2010-08-25}
   s.description = %q{Provides uses_controller_extension and a set of common mixins.}
   s.email = %q{sutto@sutto.net}
   s.extra_rdoc_files = [
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "lib/youth_tree/controller_ext/authlogic_helpers_ext.rb",
      "lib/youth_tree/controller_ext/authorization_helpers_ext.rb",
      "lib/youth_tree/controller_ext/pseudocephalopod_resource_ext.rb",
+     "lib/youth_tree/controller_ext/sidebar_ext.rb",
      "lib/youth_tree/controller_ext/ssl_requirement_ext.rb",
      "lib/youth_tree/controller_ext/title_estuary_ext.rb",
      "lib/youth_tree/controller_ext/translation_ext.rb",
