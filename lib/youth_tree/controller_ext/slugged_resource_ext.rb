@@ -1,4 +1,4 @@
-YouthTree::ControllerExt.for(:pseudocephalopod_resource) do
+YouthTree::ControllerExt.for(:slugged_resource) do
 
   protected
 

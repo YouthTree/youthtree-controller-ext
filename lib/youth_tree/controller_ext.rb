@@ -3,7 +3,7 @@ require 'active_support/concern'
 module YouthTree
   module ControllerExt
 
-    VERSION = "0.1.1".freeze
+    VERSION = "0.1.2".freeze
 
     mattr_accessor :known_extensions
     self.known_extensions ||= {}
@@ -13,6 +13,7 @@ module YouthTree
       Dir[File.join(dir, "*.rb")].each do |f|
         require f
       end
+      known_extensions[:pseudocephalopod_resource] = YouthTree::ControllerExt::SluggedResourceExt
     end
 
     # Lookup controller extensions.
